@@ -1,0 +1,23 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+class WordFinder {
++main()
+
++String outputFile
+}
+
+WordFinder <--o ReadFile
+
+ReadFile : -list : ArrayList<String>
+ReadFile : +readFile()
+ReadFile : +ArrayList<String>getData()
+
+WordFinder <--o WriteFile
+
+WriteFile : -int count
+WriteFile : -FileWriter writer
+WriteFile : -ArrayList<String>list
+WriteFile : +WriteFile(String name, ArrayList<String>list)
+WriteFile : +writeIntoFile()
+WriteFile : +int getModification()
+@enduml

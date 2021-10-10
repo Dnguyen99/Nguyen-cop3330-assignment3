@@ -1,0 +1,8 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+class NameSorter {
++main(args : String[])
++outputNames(names: ArrayList<String>)
++readNames(input: Scanner, names : ArrayList<String>)
+}
+@enduml

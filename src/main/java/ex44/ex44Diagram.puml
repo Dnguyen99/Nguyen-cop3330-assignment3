@@ -1,0 +1,8 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+class ProductSearch {
++void main(args : String[])
++String input
++String name
+}
+@enduml

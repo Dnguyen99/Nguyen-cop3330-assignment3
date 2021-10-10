@@ -1,0 +1,34 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+class WordFrequencyFinder {
++main()
+}
+
+WordFrequencyFinder <--o ReadInputFile
+
+ReadInputFile : -Scanner scan
+ReadInputFile : -File file
+ReadInputFile : -HashMap<String,Integer>map
+ReadInputFile : +String input
+ReadInputFile : +String array
+ReadInputFile : +String key
+ReadInputFile : +int value
+ReadInputFile : +ReadInputFile()
+ReadInputFile : +readFile()
+ReadInputFile : +HashMap<String,Integer>getData()
+
+WordFrequencyFinder <--o PrintReport
+
+PrintReport : -HashMap<String,Integer>map
+PrintReport : +String keys[]
+PrintReport : +String values[]
+PrintReport : +int k
+PrintReport : +int tempvalues[]
+PrintReport : +String tempkeys[]
+PrintReport : +int value
+PrintReport : +PrintReport()
+PrintReport : +printScreen()
+
+
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+class EmployeeList {
++main(args : String[])
++printDetails(filename : String)
+}
+@enduml
